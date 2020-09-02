@@ -1,10 +1,11 @@
+const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: "./src/index.ts",
-  output: { filename: "bundle.js" },
+  output: { filename: "bundle.js", path: path.resolve(__dirname, "docs") },
   resolve: { extensions: [".ts", ".js", "css"] },
   module: {
     rules: [
@@ -32,7 +33,7 @@ module.exports = {
   devServer: {
     watchContentBase: true,
     open: true,
-    contentBase: "./dist",
+    contentBase: "./docs",
     port: 4500
   }
 };

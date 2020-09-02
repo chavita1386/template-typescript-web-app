@@ -1,4 +1,4 @@
-# Template Typescript Tailwind CSS Webpack Starter Project
+# Template TypeScript Tailwind CSS Webpack Starter Project
 
 This is an example of a simple Webpack setup for using [Tailwind CSS](https://tailwindcss.com) and [TypeScript](https://www.typescriptlang.org/).
 
